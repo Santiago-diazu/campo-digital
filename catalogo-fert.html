@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/catalogo-sem-fert.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="barra-incio">
+        <img src="src/imagen/img-logo.svg" alt="Logo" class="logo">
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Nosotros</a></li>
+            <li><a href="#contactanos">Contáctanos</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+        </ul>
+        <div class="botones-inicio">
+            <img src="src/imagen/img-fav.svg" alt="favoritos" class="favoritos-logo">
+            <img src="src/imagen/img-c-compras.svg" alt="carro-compras" class="carro-compras-logo">
+            <button type="xd" class="boton-inicio">INGRESAR</button>
+        </div>
+    </nav>
+</header>
+
+  <div class="encabezado">
+    <div class="areabuscar">
+        <form class="areabuscar">
+            <input class="barrabusqueda" type="search" id="searchBar" placeholder="Buscar productos...">
+            <button class="botonbusqueda"><img src="src/imagen/img-buscador.svg" alt="" width="25px"></button>
+        </form>
+    </div>
+</div>
+<div class="contenedor">
+  <div class="contenido">
+  <h1 class="">Fertilizantes</h1><br><br>
+</div>
+</div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4" style="margin-top: 180px;">
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/1.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Abono Organico Biocare 10kg</h5>
+          <p class="card-text"> <b>$27.900</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/2.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tierra Para Jardinería</h5>
+          <p class="card-text"><b>$7.900</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/3.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fertilizante Natural</h5>
+          <p class="card-text"><b>$11.900</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Categorías</h3>
+      <hr>
+      <label class="checkbox-label">
+        <input type="checkbox" id="categoria">
+        <h6>Semillas</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="categoria">
+        <h6>Fertilizantes</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="categoria">
+        <h6>Herramientas</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="categoria">
+        <h6>Protección</h6>
+      </label>
+<br>  
+      <h3>Subcategorías</h3>
+      <hr>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subcategoria">
+        <h6>Jardinería</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subcategoria">
+        <h6>Agrícola</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subcategoria">
+        <h6>Maquinaria</h6>
+      </label>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/4.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fertilizante Rebrote 10kg</h5>
+          <p class="card-text"><b>$63.500</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/5.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hidrofollaje</h5>
+          <p class="card-text"> <b>$25.600</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/6.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fertiespecial 46kg</h5>
+          <p class="card-text"> <b>$93.300</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Subtipos</h3>
+      <hr>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Accesorios</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Agroindustriales</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Cabo</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Cerca eléctrica</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Grapa</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Lima</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Pala</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Polisombra</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Respuestos</h6>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="subtipos">
+        <h6>Siembra</h6>
+      </label>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/7.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tierra Mejorada 2kg</h5>
+          <p class="card-text"><b>$9.900</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/8.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fuerza Concentrada</h5>
+          <p class="card-text"><b>$77.900</b></p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 card-black">
+        <img src="src/imagen/img-fertilizantes/9.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fertilizante Vegano 2kg</h5>
+          <p class="card-text"><b>$25.000</b>.</p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-fav.svg" alt=""
+                width="15px"></button>
+            <button type="button" class="btn">-</button>
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">+</button>
+            <button class="btn btn-primary-1" type="button"><img src="src/imagen/img-c-compras.svg" alt=""
+                width="15px"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="parte-final"><img src="src/imagen/img-logo.svg" alt="logo" class="logo-final"></div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
