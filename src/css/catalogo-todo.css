@@ -152,6 +152,7 @@ h3 {
 .row{
     display: flex;
     flex-direction:row-reverse;
+    margin-right: 15px;
     
 .card-black {
 background-color: #484b4d;

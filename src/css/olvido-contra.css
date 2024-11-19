@@ -1,6 +1,6 @@
-body{
+body {
     background-color: #202426;
-    color: #f2f2f2;
+    color: #F2F2F2;
 }
 
 button {
@@ -10,7 +10,6 @@ button {
     font-family: 'Sulphur Point', sans-serif;
     height: 40px;
     width: 120px;
-    font-size: 11px;
 }
 
 button:hover {
@@ -44,6 +43,7 @@ button:hover {
 
 .boton-inicio {
     background-color: #9DA65D;
+    font-size: 11px;
 }
 
 .logo {
@@ -56,6 +56,7 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Sulphur Point', sans-serif;
+
 }
 
 nav ul {
@@ -91,108 +92,87 @@ nav li {
     border-radius: 50px;
 }
 
-.contenedor {
-    display: grid;
-    place-items: center;
-    height: 150px;
-}
-    
 
-.contenido {
-    text-align: center
-}
 
-h1 {
-    font-family: 'Sulphur Point', sans-serif;
-    margin-top: 80px;
+
+
+
+
+:root{
+    --color-fondo: #202426;
+    --color-contenedores: #484b4d;
+    --color-botones: #9DA65D;
+    --color-principal: #f2f2f2
 }
 
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
 }
 
-.checkbox-label input[type="checkbox"] {
-    margin-right: 10px; 
-    cursor: pointer;
-}
-
-h6 {
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 2;
-}
-
-h3 {
-    margin: 15px;
-    margin-left: 30px;
-    font-family: 'Sulphur Point', sans-serif;
-}
-
-#categoria,
-#subcategoria,
-#subtipos {
-    margin-left: 60px;
-}
-
-.row{
-    justify-content: space-between;
-    display: flex;
-    margin-right: 15px;
-    margin-left: 15px;
-
-   
-    
-.card-black {
-background-color: #484b4d;
-color: white; 
-    }
-}
-
-.agg-boton {
-    gap: none;
-}
-
-.btn{
-    border-radius: 10px;
-    color: #f2f2f2;
-    cursor: pointer;
-    justify-content: center;
-    
-}
-
-.card-footer .btn-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-
-.btn:hover{
-background-color: #202426;
-color: #f2f2f2;
-}
-
-.card-img-top{
-    height: 100%;
+.container {
+    text-align: center;
+    margin: 50px auto;
+    width: 300px;
     padding: 20px;
-    
+    border-radius: 5px;
+    background-color: var(--color-contenedores);
+}
+body { 
+    background-color: var(--color-fondo)!important;
 }
 
-.card-title {
-    font-family: 'Sulphur Point', sans-serif;
+label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+input[type="email"] {
+    border-radius: 10px!important;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: var(--color-fondo);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.recuperar-titulo {
+    font-size: 33px;
     color: #F2F2F2;
-    text-align: center;
+    font-family: 'Sulphur Point', sans-serif;
 }
 
-.card-text{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #9da65d;
+.enviar {
+    background-color: #9DA65D;
+    color: #F2F2F2;
+    height: 40px;
+    width: 120px;
+    font-size: 11px;
 }
+
+.enviar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correo {
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 
 
 
@@ -219,6 +199,7 @@ color: #f2f2f2;
     color: #f2f2f2;
     font-family: 'Sulphur Point', sans-serif;
     font-size: 24px;
+    font-weight: bold;
   }
   
   .servicio-cliente {

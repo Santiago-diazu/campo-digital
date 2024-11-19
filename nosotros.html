@@ -23,21 +23,26 @@
                 <li><a href="catalogo-todos.html">Tienda</a></li>
             </ul>
             <div class="botones-inicio">
-                <img src="src/imagen/favoritos.svg" alt="favoritos" class="favoritos-logo">
-                <img src="src/imagen/carro-compras.svg" alt="carro-compras" class="carro-compras-logo">
-                <button class="boton-inicio">INGRESAR</button>
+                <a href="favoritos.html">
+                <img src="src/imagen/favoritos.svg" alt="favoritos" class="favoritos-logo"></a>
+                <a href="carro-compras.html">
+                <img src="src/imagen/carro-compras.svg" alt="carro-compras" class="carro-compras-logo"></a>
+                <button class="boton-inicio" onclick="window.location.href='ingresar.html';">INGRESAR</button>
             </div>
         </nav>
-    </header>
+
 
     <div class="encabezado">
-        <div class="areabuscar">
-            <form class="areabuscar">
+        <div>
+            <form>
                 <input class="barrabusqueda" type="search" id="searchBar" placeholder="Buscar productos...">
-                <button class="botonbusqueda"><img src="src/imagen/logos/2.svg" alt="" width="25px"></button>
+                <button class="botonbusqueda"><img src="src/imagen/img-buscador.svg" alt="" width="25px"></button>
             </form>
         </div>
     </div>
+
+</header>
+
 
 
     <section class="nuestra-historia">
@@ -207,7 +212,7 @@
                     Campo Digital es el lugar ideal para ti. Únete a nuestra comunidad y recibe asesoría, descuentos
                     exclusivos, promociones y consejos útiles para que tus cultivos crezcan saludables y fuertes.
                 </p> <br>
-                <button class="unirse-boton" onclick="window.location.href='';">INGRESAR</button>
+                <button class="unirse-boton" onclick="window.location.href='ingresar.html';">INGRESAR</button>
             </div>
 
             <div class="unirse-texto2">
@@ -215,19 +220,39 @@
                 <p>Si tienes alguna pregunta o necesitas ayuda con tu compra, no dudes en ponerte en contacto con
                     nosotros. Estamos aquí para ayudarte en cada paso del camino.
                 </p><br>
-                <button class="unirse-boton" onclick="window.location.href='';">CONTÁCTANOS</button>
+                <button class="unirse-boton" onclick="window.location.href='contactanos.html';">CONTÁCTANOS</button>
             </div>
 
         </div>
     </section>
 
-
-
-
-
-    <section>
-        <div class="parte-final"><img src="src/imagen/imag-inicio/3.svg" alt="logo" class="logo-final"></div>
-    </section>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer">
+                <h2 class="h2-footer-1">Servicio al cliente</h2>
+                <ul class="servicio-cliente">
+                    <li><a href="promociones.html" class="footer-li">Promociones</a></li>
+                    <li><a href="nosotros.html" class="footer-li" >Nosotros</a></li>
+                    <li><a href="ingresar.html" class="footer-li">Vinculación eventos</a></li>
+                    <li><a href="seguimiento-pedido.html" class="footer-li">Seguimiento a mi pedido</a></li>
+                    <li><a href="politicas.html" class="footer-li">Políticas de privacidad</a></li>
+                    <li><a href="terminos-condiciones.html" class="footer-li">Términos y condiciones</a></li>
+                    <li><a href="contactanos.html" class="footer-li">Contáctanos</a></li>
+                </ul>
+            </div>
+        
+            <div class="parte-final">
+              <img src="src/imagen/img-logo.svg" alt="logo" class="logo-final"></div>
+        
+            <div class="contact-info">
+                <h2 class="h2-footer-2">Atención al cliente</h2>
+                <p class="footer-p">WhatsApp: 322 861 8001</p>
+                <p class="footer-p">tiendavirtual@campodigital.co</p>
+                <p class="footer-p">Calle 32 # 48 - 45 Medellín, Colombia</p>
+                <p class="footer-p">Campogitial.com es controlado y operado por: DIAZ Y ALIADOS S.A. S.NIT: 890702426-7</p>
+            </div>
+        </div>
+    </footer>
 
 
 

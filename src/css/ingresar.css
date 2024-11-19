@@ -1,6 +1,6 @@
-body{
+body {
     background-color: #202426;
-    color: #f2f2f2;
+    color: #F2F2F2;
 }
 
 button {
@@ -10,7 +10,6 @@ button {
     font-family: 'Sulphur Point', sans-serif;
     height: 40px;
     width: 120px;
-    font-size: 11px;
 }
 
 button:hover {
@@ -44,6 +43,7 @@ button:hover {
 
 .boton-inicio {
     background-color: #9DA65D;
+    font-size: 11px;
 }
 
 .logo {
@@ -56,6 +56,7 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Sulphur Point', sans-serif;
+
 }
 
 nav ul {
@@ -91,109 +92,106 @@ nav li {
     border-radius: 50px;
 }
 
-.contenedor {
-    display: grid;
-    place-items: center;
-    height: 150px;
-}
-    
 
-.contenido {
-    text-align: center
+
+
+
+
+
+:root{
+    --color-fondo: #202426;
+    --color-contenedores: #484b4d;
+    --color-botones: #9DA65D;
+    --color-principal: #f2f2f2
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo)!important;
+}
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-contenedores);
+    flex-direction: column;
+    border-radius: 15px;
+    width: 410px!important;
+    margin-bottom: 80px;
+
+}
 h1 {
+    text-align: center;
     font-family: 'Sulphur Point', sans-serif;
-    margin-top: 80px;
 }
 
-.checkbox-label {
+main{
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 8px;
+    flex-direction: column;
+    margin-top: 40px;
+    
 }
-
-.checkbox-label input[type="checkbox"] {
-    margin-right: 10px; 
-    cursor: pointer;
-}
-
-h6 {
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 2;
-}
-
-h3 {
-    margin: 15px;
-    margin-left: 30px;
-    font-family: 'Sulphur Point', sans-serif;
-}
-
-#categoria,
-#subcategoria,
-#subtipos {
-    margin-left: 60px;
-}
-
-.row{
-    justify-content: space-between;
-    display: flex;
-    margin-right: 15px;
-    margin-left: 15px;
-
+.formulario {
    
-    
-.card-black {
-background-color: #484b4d;
-color: white; 
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    color: #F2F2F2;  
+    font-family: 'Montserrat', sans-serif;
 }
 
-.agg-boton {
-    gap: none;
+.iniciar {
+    font-size: 33px;
 }
 
-.btn{
-    border-radius: 10px;
-    color: #f2f2f2;
-    cursor: pointer;
-    justify-content: center;
-    
+.boton-main {
+    background-color: #9DA65D;
+    color: #F2F2F2;
+    height: 40px;
+    width: 120px;
+    font-size: 11px;
 }
 
-.card-footer .btn-group {
+.boton-main1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-
-.btn:hover{
-background-color: #202426;
-color: #f2f2f2;
 }
 
-.card-img-top{
-    height: 100%;
-    padding: 20px;
-    
-}
-
-.card-title {
-    font-family: 'Sulphur Point', sans-serif;
-    color: #F2F2F2;
-    text-align: center;
-}
-
-.card-text{
+.ingreso {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 35px;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #9da65d;
 }
 
+.iniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    padding-top: 25px;
+}
+
+.regis-recup{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
 
 
 
@@ -219,6 +217,7 @@ color: #f2f2f2;
     color: #f2f2f2;
     font-family: 'Sulphur Point', sans-serif;
     font-size: 24px;
+    font-weight: bold;
   }
   
   .servicio-cliente {

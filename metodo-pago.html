@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/contactanos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Método de Pago - Ecommerce Agrícola</title>
+    <link rel="stylesheet" href="src/css/metodo-pago.css">
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
     <header>
         <nav class="barra-incio">
             <img src="src/imagen/imag-inicio/3.svg" alt="Logo" class="logo">
@@ -31,8 +27,8 @@
                 <button class="boton-inicio" onclick="window.location.href='ingresar.html';">INGRESAR</button>
             </div>
         </nav>
-
-
+    
+    
     <div class="encabezado">
         <div>
             <form>
@@ -41,41 +37,67 @@
             </form>
         </div>
     </div>
+    
+    </header>
 
-</header>
 
-        <div class="titulo">
-            <h1 class="title">Contacto y soporte</h1>
-        </div>
+    <div class="contenedor">
+        <h1>Seleccione el método de Pago</h1>
+        <form id="forma-de-pago">
+            <label for="metodo-de-pago" style="color: #f2f2f2; font-family: 'Montserrat', sans-serif;">Método de Pago:</label>
+            <select id="metodo-de-pago" required>
+                <option value="">Seleccione</option>
+                <option value="tarjeta-credito">Tarjeta de Crédito</option>
+                <option value="tarjeta-debito">Tarjeta de Débito</option>
+                <option value="pse">PSE</option>
+            </select>
 
-    <main>
-        <section class="formulario">
-            <div>
-                <p class="advertencia">Hemos diseñado un formulario para atender tus sugerencias, quejas o reclamos.
-                    <br>
-                    Antes de continuar, es importante que leas nuestros <a href="Politica.html">términos y
-                        condiciones</a>
-                </p>
+            <div id="tc" class="opcion">
+                <h2>Pago con Tarjeta de Crédito</h2>
+                <label for="nombre-tc">Nombre en la tarjeta:</label>
+                <input type="text" required> <br> <br>
+                
+                <label for="numero-tc">Número de tarjeta:</label>
+                <input type="text" required> <br> <br>
+                
+                <label for="expiracion-tc">Fecha de expiración (MM/AA):</label>
+                <input type="text" placeholder="MM/AA" required> <br> <br>
+                
+                <label for="cvv-tc">CVV:</label>
+                <input type="text" required> <br> <br>
+                <div class="boton-enviar">
+                    <button type="submit">Pagar</button>
+                </div>
             </div>
-            <div class="formcamp">
-                <form action=""></form>
-                <label for="nombre">Nombre</label>
-                <input class="space" type="text" id="nombre" name="nombre"><br>
-                <label for="correo">Correo eletrónico</label>
-                <input class="space" type="email" id="correo" name="correo"><br>
-                <label for="contraseña">Contraseña</label>
-                <input class="space" type="password" id="contraseña" name="contraseña"><br>
-                <h3>Describe brevemente tu situacion</h3>
-                <textarea class="space t" name="mensaje" id="mensaje"></textarea><br>
-                <div><a href="">Olvidé mi contraseña</a></div>
-            </div>
-            <div class="botonspace">
-                <button class="boton" type="submit">Enviar</button>
+
+            <div id="td" class="opcion">
+                <h2>Pago con Tarjeta de Débito</h2>
+                <label for="numero-td">Número de tarjeta:</label>
+                <input type="text" required> <br> <br>
+
+                <label for="expiracion-td">Fecha de expiración (MM/AA):</label>
+                <input type="text" placeholder="MM/AA" required> <br> <br>
+                <div class="boton-enviar">
+                    <button type="submit">Pagar</button>
+                </div>
             </div>
 
-        </section>
-
-    </main>
+            <div id="pse" class="opcion">
+                <h2>Pago por PSE</h2>
+                <label for="bancos">Seleccione su banco:</label> 
+                <select id="bancos" required>
+                    <option value="">Seleccione</option>
+                    <option value="banco-1">Bancolombia</option>
+                    <option value="banco-2">BBVA</option>
+                    <option value="banco-3">Davivienda</option>
+                    <div class="boton-enviar">
+                        <button type="submit">Pagar</button>
+                    </div>
+                    
+                </select>
+            </div>
+        </form>
+    </div>
 
     <footer>
         <div class="footer-grid">
@@ -105,6 +127,11 @@
         </div>
     </footer>
 
-</body>
 
+
+
+
+
+    <script src="src/js/script2.js"></script>
+</body>
 </html>

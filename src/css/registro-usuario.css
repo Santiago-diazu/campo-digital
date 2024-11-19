@@ -1,6 +1,5 @@
-body{
-    background-color: #202426;
-    color: #f2f2f2;
+body {
+    background-color: #202426 !important;
 }
 
 button {
@@ -10,7 +9,6 @@ button {
     font-family: 'Sulphur Point', sans-serif;
     height: 40px;
     width: 120px;
-    font-size: 11px;
 }
 
 button:hover {
@@ -44,6 +42,7 @@ button:hover {
 
 .boton-inicio {
     background-color: #9DA65D;
+    font-size: 11px;
 }
 
 .logo {
@@ -56,6 +55,7 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Sulphur Point', sans-serif;
+
 }
 
 nav ul {
@@ -91,107 +91,94 @@ nav li {
     border-radius: 50px;
 }
 
-.contenedor {
-    display: grid;
-    place-items: center;
-    height: 150px;
+
+
+
+:root{
+    --color-fondo: #202426;
+    --color-contenedores: #484b4d;
+    --color-botones: #9DA65D;
+    --font-principal: 'Sulphur Point', sans-serif;
+    background-color: var(--color-fondo);
 }
+
+* {
     
-
-.contenido {
-    text-align: center
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-principal);
 }
 
-h1 {
-    font-family: 'Sulphur Point', sans-serif;
-    margin-top: 80px;
-}
-
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.checkbox-label input[type="checkbox"] {
-    margin-right: 10px; 
-    cursor: pointer;
-}
-
-h6 {
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 2;
-}
-
-h3 {
-    margin: 15px;
-    margin-left: 30px;
-    font-family: 'Sulphur Point', sans-serif;
-}
-
-#categoria,
-#subcategoria,
-#subtipos {
-    margin-left: 60px;
-}
-
-.row{
-    justify-content: space-between;
-    display: flex;
-    margin-right: 15px;
-    margin-left: 15px;
-
-   
     
-.card-black {
-background-color: #484b4d;
-color: white; 
-    }
-}
-
-.agg-boton {
-    gap: none;
-}
-
-.btn{
-    border-radius: 10px;
-    color: #f2f2f2;
-    cursor: pointer;
-    justify-content: center;
-    
-}
-
-.card-footer .btn-group {
+main {
+    background-color: var(--color-fondo);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-
-.btn:hover{
-background-color: #202426;
-color: #f2f2f2;
+    height: 75vh;
 }
 
-.card-img-top{
-    height: 100%;
-    padding: 20px;
-    
+
+.informacion{
+    padding-top: 20px;
+    position: absolute;
+    color: #e3eae6;
+    transform: translate(-50%,-50%);
+    width:  520px;
+    height: 500px;
+    border-radius: 15px;
+    top: 60%;
+    left: 50%;
+    background-color: var(--color-contenedores)
 }
 
-.card-title {
-    font-family: 'Sulphur Point', sans-serif;
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(5, 25, 1);
+    background-color: var(--color-contenedores);   
+}
+
+.enviar {
+    background-color: #9DA65D;
     color: #F2F2F2;
-    text-align: center;
+    height: 40px;
+    width: 120px;
+    font-size: 11px;
 }
 
-.card-text{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #9da65d;
+.enviar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.check {
+    margin-left: 20px;
+    color: #F2F2F2
+}
+
+.check_1{
+    display: inline-block; 
+    width: 20px;
+    height: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    cursor: pointer;
 }
 
 
@@ -202,6 +189,7 @@ color: #f2f2f2;
     padding-top: 100px;
     justify-content: center;
 }
+
 
 .footer-grid{
     margin: 50px;
@@ -219,6 +207,7 @@ color: #f2f2f2;
     color: #f2f2f2;
     font-family: 'Sulphur Point', sans-serif;
     font-size: 24px;
+    font-weight: bold;
   }
   
   .servicio-cliente {
@@ -247,3 +236,4 @@ color: #f2f2f2;
   .logo-final{
     height: 80px;
   }
+
