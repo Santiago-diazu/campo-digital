@@ -7,39 +7,26 @@
     <link rel="stylesheet" href="src/css/metodo-pago.css">
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/imagen/logos/favicon.svg" type="image/sgv+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
-        <nav class="barra-incio">
-            <img src="src/imagen/imag-inicio/3.svg" alt="Logo" class="logo">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contactanos.html">Contáctanos</a></li>
-                <li><a href="catalogo-todos.html">Tienda</a></li>
-            </ul>
-            <div class="botones-inicio">
-                <a href="favoritos.html">
-                <img src="src/imagen/favoritos.svg" alt="favoritos" class="favoritos-logo"></a>
-                <a href="carro-compras.html">
-                <img src="src/imagen/carro-compras.svg" alt="carro-compras" class="carro-compras-logo"></a>
-                <button class="boton-inicio" onclick="window.location.href='ingresar.html';">INGRESAR</button>
-            </div>
-        </nav>
-    
-    
-    <div class="encabezado">
-        <div>
-            <form>
-                <input class="barrabusqueda" type="search" id="searchBar" placeholder="Buscar productos...">
-                <button class="botonbusqueda"><img src="src/imagen/img-buscador.svg" alt="" width="25px"></button>
-            </form>
+        <div class="containerboton">
+            <a onclick="window.history.back();">
+                <button class="boton"><i class="fa-solid fa-arrow-left"></i></button>
+            </a>
         </div>
-    </div>
-    
-    </header>
+        <div class="titlecont">
+            <div>
+                <h1 class="title">Método de pago</h1>
+            </div>
+        </div>
 
+    </header>
 
     <div class="contenedor">
         <h1>Seleccione el método de Pago</h1>
@@ -66,7 +53,7 @@
                 <label for="cvv-tc">CVV:</label>
                 <input type="text" required> <br> <br>
                 <div class="boton-enviar">
-                    <button type="submit">Pagar</button>
+                    <button type="submit">PAGAR</button>
                 </div>
             </div>
 
@@ -78,7 +65,7 @@
                 <label for="expiracion-td">Fecha de expiración (MM/AA):</label>
                 <input type="text" placeholder="MM/AA" required> <br> <br>
                 <div class="boton-enviar">
-                    <button type="submit">Pagar</button>
+                    <button type="submit">PAGAR</button>
                 </div>
             </div>
 
@@ -91,45 +78,13 @@
                     <option value="banco-2">BBVA</option>
                     <option value="banco-3">Davivienda</option>
                     <div class="boton-enviar">
-                        <button type="submit">Pagar</button>
+                        <button type="submit">PAGAR</button>
                     </div>
                     
                 </select>
             </div>
         </form>
     </div>
-
-    <footer>
-        <div class="footer-grid">
-            <div class="footer">
-                <h2 class="h2-footer">Servicio al cliente</h2>
-                <ul class="servicio-cliente">
-                    <li><a href="promociones.html" class="footer-li">Promociones</a></li>
-                    <li><a href="nosotros.html" class="footer-li" >Nosotros</a></li>
-                    <li><a href="ingresar.html" class="footer-li">Vinculación eventos</a></li>
-                    <li><a href="seguimiento-pedido.html" class="footer-li">Seguimiento a mi pedido</a></li>
-                    <li><a href="politicas.html" class="footer-li">Políticas de privacidad</a></li>
-                    <li><a href="terminos-condiciones.html" class="footer-li">Términos y condiciones</a></li>
-                    <li><a href="contactanos.html" class="footer-li">Contáctanos</a></li>
-                </ul>
-            </div>
-        
-            <div class="parte-final">
-              <img src="src/imagen/img-logo.svg" alt="logo" class="logo-final"></div>
-        
-            <div class="contact-info">
-                <h2 class="h2-footer">Atención al cliente</h2>
-                <p class="footer-p">WhatsApp: 322 861 8001</p>
-                <p class="footer-p">tiendavirtual@campodigital.co</p>
-                <p class="footer-p">Calle 32 # 48 - 45 Medellín, Colombia</p>
-                <p class="footer-p">Campogitial.com es controlado y operado por: DIAZ Y ALIADOS S.A. S.NIT: 890702426-7</p>
-            </div>
-        </div>
-    </footer>
-
-
-
-
 
 
     <script src="src/js/script2.js"></script>
